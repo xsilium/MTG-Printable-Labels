@@ -5,7 +5,7 @@ Working file (too large for repository) available at: https://drive.google.com/o
 
 Rebuilt and updated MTG labels for card organization by set. Currently updated to Ultimate Masters and includes all FTV and Duel Deck sets. This document is currently designed for US Letter-sized sticker paper (8.5in. x 11in.)
 
-**Keyrune does not yet have the symbol for Ravnica Allegiance.**
+**Keyrune does not yet have the symbol for Ravnica Allegiance. This will be updated once that becomes available.**
 
 - Print on sticker paper. (https://www.amazon.com/gp/product/B0000C0CJQ)
 - Cut out with an exacto knife.
