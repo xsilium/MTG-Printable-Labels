@@ -10,7 +10,7 @@ Rebuilt and updated MTG labels for card organization by set. Currently updated t
 
 Better directions to come after further testing.
 
-Special thanks to:
-u/yuri-g (https://www.reddit.com/user/yuri-g) for the first draft of this
-u/LostPaddle (https://www.reddit.com/user/lostpaddle) for the updated version
-Keyrune (https://andrewgioia.github.io/Keyrune/index.html) for the SVG icons for all the sets.
+**Special thanks to:**
+- u/yuri-g (https://www.reddit.com/user/yuri-g) for the first draft of this
+- u/LostPaddle (https://www.reddit.com/user/lostpaddle) for creating v2
+- Keyrune (https://andrewgioia.github.io/Keyrune/index.html) for the SVG icons for all the sets.
