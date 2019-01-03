@@ -1,4 +1,4 @@
-# MTG-Printable-Labels
+# Magic the Gathering (MTG) Printable Labels
 Printable sheet for All Magic the Gathering (MTG) Sets with Symbols
 
 Rebuilt and updated MTG labels for card organization by set. Currently updated to Ultimate Masters and includes all FTV and Duel Deck sets. This document is currently designed for US Letter-sized sticker paper (8.5in. x 11in.)
