@@ -8,7 +8,7 @@ Rebuilt and updated MTG labels for card organization by set. Currently updated t
 - Label plastic dividers (https://www.amazon.com/dp/B00S3FF1PI/)
 - Organize MTG cards by set!
 
-Better directions to come after further testing.
+**Updated version coming using Avery Address Labels (still fit the same dividers)** https://www.amazon.com/d/Address-Labels/Avery-Address-Labels-Laser-Printers/B075FYF36N/
 
 **Special thanks to:**
 - u/yuri-g (https://www.reddit.com/user/yuri-g) for the first draft of this
