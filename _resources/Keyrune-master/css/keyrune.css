@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.3.3');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.3.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.3.3') format('woff2'), url('../fonts/keyrune.woff?v=3.3.3') format('woff'), url('../fonts/keyrune.ttf?v=3.3.3') format('truetype'), url('../fonts/keyrune.svg?v=3.3.3#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.7.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.7.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.7.0') format('woff2'), url('../fonts/keyrune.woff?v=3.7.0') format('woff'), url('../fonts/keyrune.ttf?v=3.7.0') format('truetype'), url('../fonts/keyrune.svg?v=3.7.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -39,6 +39,41 @@
 }
 .ss-6x {
   font-size: 6em;
+}
+/**
+ * Handling for set symbols that use an inner and outer layer, like M21
+ *
+ * The inner layer is what gets colorized and is the traditional "set symbol"
+ * The outer layer takes over as the border, and is white for common cards
+ * but black for uncommon, rare, and mythic.
+ */
+.ss-duo {
+  color: #fff;
+}
+.ss-duo::after {
+  color: #000;
+  content: '';
+  display: block;
+  font-size: 1em;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ss-duo.ss-xdnd::after {
+  content: "\e973";
+}
+.ss-duo.ss-xin4::after {
+  content: "\e979";
+}
+.ss-duo.ss-common {
+  color: #fff;
+}
+.ss-duo.ss-uncommon::after,
+.ss-duo.ss-rare::after,
+.ss-duo.ss-mythic::after {
+  color: #000;
 }
 /**
  * Rarity colors */
@@ -201,6 +236,9 @@
 .ss-m19:before {
   content: "\e941";
 }
+.ss-m20:before {
+  content: "\e95d";
+}
 .ss-1e:before {
   content: "\e947";
 }
@@ -212,6 +250,12 @@
 }
 .ss-3e:before {
   content: "\e94a";
+}
+.ss-m21:before {
+  content: "\e960";
+}
+.ss-xdnd:before {
+  content: "\e972";
 }
 /**
  * Expansions */
@@ -487,8 +531,33 @@
 .ss-gk1:before {
   content: "\e94b";
 }
-.ss-rna:before {
+.ss-rna:before,
+.ss-gk2:before {
   content: "\e959";
+}
+.ss-war:before {
+  content: "\e95a";
+}
+/* Eldraine Block */
+.ss-eld:before {
+  content: "\e95e";
+}
+/* 2020 Sets */
+.ss-thb:before {
+  content: "\e961";
+}
+.ss-iko:before {
+  content: "\e962";
+}
+.ss-znr:before {
+  content: "\e963";
+}
+/* 2021 Sets */
+.ss-xkld:before {
+  content: "\e974";
+}
+.ss-xssm:before {
+  content: "\e975";
 }
 /**
  * Command Zone */
@@ -553,6 +622,22 @@
 .ss-c18:before {
   content: "\e946";
 }
+.ss-c19:before {
+  content: "\e95f";
+}
+.ss-c20:before {
+  content: "\e966";
+}
+.ss-znc:before {
+  content: "\e967";
+}
+.ss-cc1:before {
+  content: "\e968";
+}
+.ss-cmr:before,
+.ss-cmc:before {
+  content: "\e969";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -596,6 +681,21 @@
 }
 .ss-uma:before {
   content: "\e958";
+}
+.ss-mh1:before {
+  content: "\e95b";
+}
+.ss-2xm:before {
+  content: "\e96e";
+}
+.ss-jmp:before {
+  content: "\e96f";
+}
+.ss-mb1:before {
+  content: "\e971";
+}
+.ss-mh2:before {
+  content: "\e97b";
 }
 /**
  * Beginner */
@@ -743,6 +843,12 @@
 .ss-ss1:before {
   content: "\e944";
 }
+.ss-ss2:before {
+  content: "\e95c";
+}
+.ss-ss3:before {
+  content: "\e96d";
+}
 /**
  * Global Series */
 .ss-gs1:before {
@@ -785,6 +891,18 @@
 .ss-gnt:before {
   content: "\e94d";
 }
+.ss-gn2:before {
+  content: "\e964";
+}
+.ss-tsr:before {
+  content: "\e976";
+}
+.ss-xin3:before {
+  content: "\e977";
+}
+.ss-xin4:before {
+  content: "\e978";
+}
 /**
  * Promotional */
 .ss-pgru:before {
@@ -799,7 +917,9 @@
 .ss-pleaf:before {
   content: "\e686";
 }
-.ss-pmei:before {
+.ss-pmei:before,
+.ss-htr:before,
+.ss-htr17:before {
   content: "\e687";
 }
 .ss-parl:before {
@@ -866,11 +986,28 @@
 .ss-parl3:before {
   content: "\e943";
 }
-.ss-htr:before {
-  content: "\e687";
-}
 .ss-med:before {
   content: "\e94c";
+}
+.ss-ptg:before {
+  content: "\e965";
+}
+.ss-j20:before {
+  content: "\e96a";
+}
+.ss-zne:before {
+  content: "\e97a";
+}
+/**
+ * Secret Lairs */
+.ss-slu:before {
+  content: "\e687";
+}
+.ss-sld:before {
+  content: "\e687";
+}
+.ss-psld:before {
+  content: "\e687";
 }
 /**
  * Online */
@@ -910,6 +1047,12 @@
 .ss-pz2:before {
   content: "\e91f";
 }
+.ss-ha1:before {
+  content: "\e96b";
+}
+.ss-akr:before {
+  content: "\e970";
+}
 /**
  * Un-serious */
 .ss-ugl:before {
@@ -920,6 +1063,9 @@
 }
 .ss-ust:before {
   content: "\e930";
+}
+.ss-und:before {
+  content: "\e96c";
 }
 /**
  * Unofficial */
